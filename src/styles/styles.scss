@@ -1,0 +1,82 @@
+@import '../assets/fonts/fonts.css';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+}
+
+#app {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    
+}
+
+.layout-default {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    #nav {
+        width: 100%;
+    }
+
+    #sidebar {
+        width: 27%;
+    }
+
+    #content {
+        width: 73%;
+    }
+
+    .container {
+        display: flex;
+        max-width: 1350px;
+        width: 100%;
+        margin: 50px auto;
+    }
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background-color: #28B888;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+
+  &:hover {
+      cursor: pointer;
+  }
+}
