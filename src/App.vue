@@ -12,6 +12,9 @@ export default {
   components: {
     'default-layout': Default,
   },
+  created() {
+    this.$store.dispatch('fetchProducts');
+  },
   data() {
     return {
       logo: {
